@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "05ce7f9a-33da-41a8-8b31-7b8ce3f6efd7",
+		"name": "recados-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36721046"
+	},
+	"item": [
+		{
+			"name": "Gerar recado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\": \"Teste\",\r\n  \"descricao\": \"Teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/recados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar recados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/recados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar recado",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/\"inseririd\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"\"inseririd\""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
